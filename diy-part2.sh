@@ -49,6 +49,8 @@ svn co https://github.com/fw876/helloworld/trunk/shadowsocksr-libev package/shad
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-eqos package/luci-app-eqos
 svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/luci-app-ssr-plus
 svn co https://github.com/fw876/helloworld/trunk/naiveproxy package/naiveproxy
+svn co https://github.com/fw876/helloworld/trunk/simple-obfs package/simple-obfs
+svn co https://github.com/fw876/helloworld/trunk/trojan package/trojan
 
 # 添加luci-app-amlogic / 晶晨宝盒
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
