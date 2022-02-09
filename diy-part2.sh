@@ -51,6 +51,8 @@ svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/luci-
 svn co https://github.com/fw876/helloworld/trunk/naiveproxy package/naiveproxy
 svn co https://github.com/fw876/helloworld/trunk/simple-obfs package/simple-obfs
 svn co https://github.com/fw876/helloworld/trunk/trojan package/trojan
+svn co https://github.com/fw876/helloworld/trunk/v2ray-geodata package/v2ray-geodata
+svn co https://github.com/fw876/helloworld/trunk/v2raya package/v2raya
 
 # 添加luci-app-amlogic / 晶晨宝盒
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
