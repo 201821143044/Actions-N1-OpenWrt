@@ -86,9 +86,5 @@ find package/*/ -maxdepth 2 -path "*/Makefile" | xargs -i sed -i 's/PKG_SOURCE_U
 ./scripts/feeds install -a
 
 #12月14日添加手动修正Dokerd校验码更新导致编译错误的问题
-rm -rf ./feeds/packages/utils/runc/Makefile
-svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile ./feeds/packages/utils/runc/Makefile
-
-#2月16日添加手动修正btrfs-progs编译错误的问题
-rm -rf ./feeds/packages/utils/btrfs-progs
-svn co https://github.com/WYC-2020/packages/trunk/utils/btrfs-progs ./feeds/packages/utils/btrfs-progs
+#rm -rf ./feeds/packages/utils/runc/Makefile
+#svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile ./feeds/packages/utils/runc/Makefile
