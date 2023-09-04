@@ -44,7 +44,7 @@ svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-eqos package/l
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
 
 # themes
-svn co https://github.com/solidus1983/luci-theme-opentomato/trunk/luci/themes/luci-theme-opentomato package/luci-theme-opentomato
+svn co https://github.com/zxlhhyccc/luci-theme-opentomato/trunk/luci/themes/luci-theme-opentomato package/luci-theme-opentomato
 git clone https://github.com/davinyue/luci-theme-edge package/luci-theme-edge
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
