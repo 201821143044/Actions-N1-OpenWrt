@@ -38,6 +38,7 @@ pushd package/luci-app-openclash/tools/po2lmo
 make && sudo make install
 popd
 # svn co https://github.com/xiaorouji/openwrt-passwall/branches/packages package/passwall
+git clone https://github.com/xiaorouji/openwrt-passwall-packages.git;main package/passwall
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-eqos package/luci-app-eqos
 
 # 添加luci-app-amlogic / 晶晨宝盒
