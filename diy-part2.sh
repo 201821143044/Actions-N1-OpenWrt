@@ -14,6 +14,10 @@ sed -i 's#192.168.1.1#192.168.1.99#g' package/base-files/files/bin/config_genera
 sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' feeds/luci/applications/luci-app-cpufreq/Makefile
 sed -i 's/services/system/g' feeds/luci/applications/luci-app-cpufreq/luasrc/controller/cpufreq.lua
 
+# 跟随最新版naiveproxy
+rm -rf feeds/passwall_packages/naiveproxy
+svn co https://github.com/sbwml/openwrt_helloworld/trunk/v5/naiveproxy feeds/passwall_packages/naiveproxy
+
 # 移除不用软件包
 rm -rf package/lean/luci-app-wrtbwmon
 rm -rf package/lean/luci-theme-argon
