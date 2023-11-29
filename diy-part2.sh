@@ -16,10 +16,7 @@ sed -i 's/services/system/g' feeds/luci/applications/luci-app-cpufreq/luasrc/con
 
 # 跟随最新版naiveproxy
 rm -rf feeds/passwall_packages/naiveproxy
-git clone https://github.com/sbwml/openwrt_helloworld.git
-cd openwrt_helloworld
-git checkout v5
-cd ..
+git clone -b v5 https://github.com/sbwml/openwrt_helloworld.git
 cp -r openwrt_helloworld/naiveproxy feeds/passwall_packages
 rm -rf openwrt_helloworld
 
