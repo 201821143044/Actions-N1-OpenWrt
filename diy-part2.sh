@@ -16,7 +16,7 @@ sed -i 's/services/system/g' feeds/luci/applications/luci-app-cpufreq/luasrc/con
 
 # 跟随最新版naiveproxy
 rm -rf feeds/passwall_packages/naiveproxy
-svn co https://github.com/sbwml/openwrt_helloworld/trunk/v5/naiveproxy feeds/passwall_packages/naiveproxy
+svn co https://github.com/sbwml/openwrt_helloworld/branches/v5/naiveproxy feeds/passwall_packages/naiveproxy
 
 # 移除不用软件包
 rm -rf package/lean/luci-app-wrtbwmon
