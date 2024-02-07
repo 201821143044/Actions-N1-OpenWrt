@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-        - name: Before freeing up disk space
+    - name: Before freeing up disk space
       run: |
         echo "Before freeing up disk space"
         echo "=============================================================================="
