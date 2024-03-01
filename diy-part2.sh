@@ -40,6 +40,7 @@ git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 git clone https://github.com/VictC79/luci-app-vssr.git package/luci-app-vssr
 git clone https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
 git clone https://github.com/Cneupa/luci-app-bypass package/luci-app-bypass
+git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic package/luci-app-unblockneteasemusic
 
 # 科学上网插件依赖
 wget https://codeload.github.com/vernesong/OpenClash/zip/refs/heads/master -O OpenClash.zip
