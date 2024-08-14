@@ -34,6 +34,9 @@ rm -rf feeds/helloworld/naiveproxy
 git clone -b v5 https://github.com/sbwml/openwrt_helloworld.git
 cp -r openwrt_helloworld/naiveproxy feeds/passwall_packages
 cp -r openwrt_helloworld/naiveproxy feeds/helloworld
+
+# 添加luci-app-homeproxy
+cp -r openwrt_helloworld/luci-app-homeproxy package
 rm -rf openwrt_helloworld
 
 # 移除不用软件包
