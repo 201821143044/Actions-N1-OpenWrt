@@ -10,9 +10,6 @@
 # 替换默认IP
 sed -i 's#192.168.1.1#192.168.1.99#g' package/base-files/files/bin/config_generate
 
-# 替换toolchain/gcc默认版本为11
-sed -i 's/default GCC_USE_VERSION_12/default GCC_USE_VERSION_11/' toolchain/gcc/Config.in
-
 # cpufreq
 sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' feeds/luci/applications/luci-app-cpufreq/Makefile
 sed -i 's/services/system/g' feeds/luci/applications/luci-app-cpufreq/luasrc/controller/cpufreq.lua
