@@ -10,12 +10,6 @@
 # 替换默认IP
 sed -i 's#192.168.1.1#192.168.1.99#g' package/base-files/files/bin/config_generate
 
-# 替换gcc到11
-rm -rf toolchain/gcc
-wget https://github.com/wekingchen/my-file/raw/master/gcc.zip
-unzip gcc.zip
-rm -rf gcc.zip
-
 # cpufreq
 sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' feeds/luci/applications/luci-app-cpufreq/Makefile
 sed -i 's/services/system/g' feeds/luci/applications/luci-app-cpufreq/luasrc/controller/cpufreq.lua
