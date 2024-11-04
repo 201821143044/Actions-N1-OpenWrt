@@ -14,6 +14,10 @@ sed -i 's#192.168.1.1#192.168.1.99#g' package/base-files/files/bin/config_genera
 sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' feeds/luci/applications/luci-app-cpufreq/Makefile
 sed -i 's/services/system/g' feeds/luci/applications/luci-app-cpufreq/luasrc/controller/cpufreq.lua
 
+# 移除 lede feeds 自带的番茄核心包
+rm -rf feeds/packages/net/{xray-core,xray-plugin,v2ray-core,v2ray-plugin,v2ray-geodata,sing-box,hysteria,naiveproxy,shadowsocks-rust,tuic-client,microsocks,chinadns-ng,alist,dns2socks,dns2tcp,ipt2socks}
+rm -rf feeds/luci/applications/{luci-app-passwall,luci-app-ssr-plus}
+
 # 修改golang源码以编译xray1.8.8+版本
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
