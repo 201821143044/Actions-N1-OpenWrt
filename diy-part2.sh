@@ -15,8 +15,20 @@ sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' feeds/luci/applic
 sed -i 's/services/system/g' feeds/luci/applications/luci-app-cpufreq/luasrc/controller/cpufreq.lua
 
 # 移除 lede feeds 自带的番茄核心包
-rm -rf feeds/packages/net/{xray-core,xray-plugin,v2ray-core,v2ray-plugin,v2ray-geodata,sing-box,hysteria,naiveproxy,shadowsocks-rust,tuic-client,microsocks,chinadns-ng,alist,dns2socks,dns2tcp,ipt2socks}
-rm -rf feeds/luci/applications/{luci-app-passwall,luci-app-ssr-plus}
+rm -rf feeds/packages/net/xray-core
+rm -rf feeds/packages/net/v2ray-geodata
+rm -rf feeds/packages/net/sing-box
+rm -rf feeds/packages/net/chinadns-ng
+rm -rf feeds/packages/net/dns2socks
+rm -rf feeds/packages/net/dns2tcp
+rm -rf feeds/packages/net/microsocks
+cp -r feeds/passwall_packages/xray-core feeds/packages/net
+cp -r feeds/passwall_packages/v2ray-geodata feeds/packages/net
+cp -r feeds/passwall_packages/sing-box feeds/packages/net
+cp -r feeds/passwall_packages/chinadns-ng feeds/packages/net
+cp -r feeds/passwall_packages/dns2socks feeds/packages/net
+cp -r feeds/passwall_packages/dns2tcp feeds/packages/net
+cp -r feeds/passwall_packages/microsocks feeds/packages/net
 
 # 修改golang源码以编译xray1.8.8+版本
 rm -rf feeds/packages/lang/golang
