@@ -46,7 +46,7 @@ sed -i 's/PKG_VERSION:=0.53.2/PKG_VERSION:=0.61.0/' feeds/packages/net/frp/Makef
 sed -i 's/PKG_HASH:=ff2a4f04e7732bc77730304e48f97fdd062be2b142ae34c518ab9b9d7a3b32ec/PKG_HASH:=c06a11982ef548372038ec99a6b01cf4f7817a9b88ee5064e41e5132d0ccb7e1/' feeds/packages/net/frp/Makefile
 
 # 修改tailscale版本为官网最新v1.76.6 https://github.com/tailscale/tailscale 格式：https://codeload.github.com/tailscale/tailscale/tar.gz/v$(PKG_VERSION)?
-sed -i 's/PKG_VERSION:=1.70.1/PKG_VERSION:=1.76.6/' feeds/packages/net/tailscale/Makefile
+sed -i 's/PKG_VERSION:=1.76.1/PKG_VERSION:=1.76.6/' feeds/packages/net/tailscale/Makefile
 sed -i 's/PKG_HASH:=ce87e52fd4e8e52540162a2529c5d73f5f76c6679147a7887058865c9e01ec36/PKG_HASH:=1603c78a6a5e9f83b278d305e1196fbfdeeb841be10ac2ddb7ea433c2701234b/' feeds/packages/net/tailscale/Makefile
 rm -rf feeds/packages/net/tailscale/patches
 
